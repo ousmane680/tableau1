@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            width: 500px;
+            margin: 15px auto;
+            background-color: #f9f2e7;
+            padding: 50px;
+        }
+        h1{
+            font-size: 26px;
+            font-weight: 500px;
+        }
+        p{
+            font-size: 17px;
+        }
+        h6{
+            font-size: 12px;
+        }
+        form{
+            position: relative;
+        }
+        label{
+            position: relative;
+            display:inline-block;
+            width: 170px;
+            font-size: 14px;
+        }
+         .i1{
+            position: absolute;
+            color: red;
+            font-size: 4px;
+            left: 46px;
+            top: 48px;
+           
+        }
+        .i2{
+            position: absolute;
+            color: red;
+            font-size: 4px;
+            left: 90px;
+            top: 89px;
+           
+        }
+        .i3{
+            position: absolute;
+            color: red;
+            font-size: 4px;
+            left: 33px;
+            top: 128px;
+           
+        }
+        .input-egal,#select{
+            width: 150px;
+            padding: 2px;
+          
+        }
+        #adres{
+            width: 280px;
+            padding: 2px;
+        }
+        .span1{
+            margin-left: 173px;
+            font-size: 12px;
+        }
+        .span2{
+            margin-left: 107px;
+            font-size: 12px;
+        }
+        .span3{
+            margin-left: 130px;
+            font-size: 12px;
+        }
+        .taille{
+            font-size: 12px;
+        }
+        .right{
+            padding-left: 172px;
+        }
+        .message{
+            width: 100px;
+            font-size: 14px;
+        }
+        textarea{
+            margin-left: 68px;
+            width: 320px;
+            height: 70px;
+        }
+        button{
+            margin-left: 170px;
+            padding: 3px;
+            border-radius: 3px;
+            border: 1px solid grey;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Formulaire d'inscription par mail</h1>
+    <p>Nous serions ravis d'etre en contact avec vous, inscrivez vous à notre newsletter. </p>
+    <hr>
+    <h6>veuillez completer toutes les information ci-dessous</h6>
+    <form >
+        <label for="select">civilité</label>
+        <select  id="select">
+            <option value="">Passe select</option>
+            <option value="">Passe select 2</option>
+            <option value="">Passe select 3</option>
+        </select><br><br>
+        <label for="prenom">Prenom </label>
+        <i class="fa fa-star i1"></i>
+        <input class="input-egal" type="text" id="prenom"><br><br>
+        <label for="nom">Nom de famille </label>
+        <i class="fa fa-star i2"></i>
+        <input class="input-egal" type="text" id="prenom"><br><br>
+        <label for="mail">email </label>
+        <i class="fa fa-star i3"></i>
+        <input class="input-egal" type="mail" id="mail"><br><br>
+        <label for="tel">Telephone</label>
+        <input class="input-egal" type="tel" id="tel">
+        <input class="input-egal" type="tel" id="tel"><br>
+        <span class="span1">indicatif</span> <span class="span2">numero</span><br><br>
+        <label for="adres">Adress</label>
+        <input type="text" id="adres"><br><br>
+        <div class="right">
+            <input class="input-egal" type="text">
+            <input class="input-egal" type="text"><br>
+            <span class="taille">ville</span> <span class="span3">Departement</span><br><br>
+            <input class="input-egal" type="text"><br>
+            <span class="taille">code postal</span><br><br>
+        </div>
+        <label class="message" for="message">commentaires reponses ou suggestion</label>
+        <textarea name="message" id="message"></textarea><br><br>
+        <button type="button">Soumettre</button>
+        
+    </form>
+    </div>
+    
+</body>
+</html>
